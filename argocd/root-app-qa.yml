@@ -4,7 +4,7 @@ metadata:
   name: root-appbundle-app-qa
   namespace: argocd
   finalizers:
-  - resources-finalizer.argocd.argoproj.io
+    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: default
@@ -12,5 +12,5 @@ spec:
   project: appbundle-project-qa
   source:
     path: argocd/apps-children/qa
-    repoURL: https://github.com/d0-labs/argocd-app-of-apps-parent
+    repoURL: https://github.com/VonnyJap/argocd-app-of-apps-parent
     targetRevision: HEAD
